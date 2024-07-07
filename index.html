@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive landing page</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+	<nav class="navbar">
+		<h1 class="logo">ADVENTURE</h1>
+		<ul class="navlink">
+			<li><a href="#"></a>Home</li>
+			<li><a href="#"></a>Tour</li>
+			<li><a href="#"></a>About</li>
+			<li><a href="#"></a>Contact Us</li>
+		</ul>
+		<img src="img/menu.png" alt="" class="menu-btn">
+	</nav>
+	</div>
+	<header>
+		<div class="header-content">
+			<h2>Explore The Colorful world</h2>
+			<div class="line"></div>
+			<h1> A WONDERFUL GIFT</h1>
+			<a href="#" class="ctn">Learn More</a>
+		</div>
+	</header>
+	<section class="event">
+		<div class="title">
+			<h2> Upcoming Tours</h2>
+			<div class="line"></div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<img src="img/tour.jpg" alt="">
+				<h4>Everest Trek</h4>
+				
+			</div>
+			<div class="col">
+				<img src="img/tour1.jpg" alt="">
+				<h4>River rafting</h4>
+				
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="footer">
+			<h1>Made By Riya Patel</h1>
+		</div>
+	</footer>
+	<script>
+		const menubtn = document.querySelector('.menu-btn')
+		const navlinks = document.querySelector('.navlink')
+
+		menubtn.addEventListener('click',()=>{
+			navlinks.classList.toggle('mobile-menu')
+		})
+	</script>
+</body>
+</html>
